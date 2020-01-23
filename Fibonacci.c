@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-int fibonacci(int n){
+int fibonacci(int n){ //Recursive Function
    if(n==0||n==1)
      return n;
    else
