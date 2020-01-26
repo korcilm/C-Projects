@@ -57,3 +57,51 @@ int main()
     }
     return 0;
 }
+/* Fonksiyonlarla kullanımı
+void kelimeUzunluk(char a[]){
+    int i,kelime=0,kelimeSayisi=0;
+    for(i=0;a[i]!='\0';i++){
+        if(a[i]==' '){
+            kelime++;
+            printf("%d.kelimenin uzunlugu: %d \n",kelime,kelimeSayisi);
+            kelimeSayisi=0;
+            i++;
+        }
+        kelimeSayisi++;
+    }
+    kelime++;
+    printf("%d.kelimenin uzunlugu: %d \n",kelime,kelimeSayisi);
+}
+void harfinSayisi(char a[], char harf){
+    int sayac=0,frekans=0;
+    while(a[sayac] != 0)
+    {
+        if(a[sayac] == harf)
+            frekans++;
+        sayac++;
+    }
+    printf("=> %c karakteri bu metinde %d kez geciyor.\n",harf, frekans);
+}
+void kelimeSayisi(char a[]){
+    int i=0,kelimeSayisi=0;
+    while(a[i]!='\0')
+    {
+        if(a[i]==' ')
+         kelimeSayisi++;
+
+     i++;
+    }
+    printf("=> Metindeki kelime sayisi:%d\n",kelimeSayisi+1);
+}
+int main()
+{
+    char a[100], harf;
+    printf("Metni girin:");
+        gets(a);
+    kelimeUzunluk(a);
+    kelimeSayisi(a);
+    printf("Harfi giriniz:");
+        harf = getchar();
+    harfinSayisi(a, harf);
+    return 0;
+}*/
