@@ -20,3 +20,26 @@ int main()
     }
     return 0;
 }
+***********dizi kullanarak yapımı************
+int main()
+{
+    int n,i,j;
+    printf("Pascal ucgeni satir sayisi giriniz: ");
+    scanf("%d",&n);
+    int dizi[n][n];
+    for(i=0;i<=n;i++){
+        for(j=0;j<=i;j++){
+            if(i==j || j==0){
+                dizi[i][j]=1;
+                printf("%6d",dizi[i][j]);
+            }
+            else{
+                dizi[i][j]=dizi[i-1][j-1]+dizi[i-1][j];
+                printf("%6d",dizi[i][j]);
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
